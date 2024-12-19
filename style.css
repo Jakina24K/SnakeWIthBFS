@@ -1,0 +1,41 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(20, 20px);
+    grid-template-rows: repeat(20, 20px);
+    gap: 1px;
+    margin: 20px auto;
+}
+
+.cell {
+    width: 20px;
+    height: 20px;
+    background-color: #eee;
+}
+
+.cell.snake {
+    background-color: green;
+}
+
+.cell.food {
+    background-color: red;
+}
+
+.message {
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+}
